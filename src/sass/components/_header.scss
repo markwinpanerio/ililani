@@ -1,0 +1,11 @@
+.header {
+  &-logo {
+    display: block;
+    width: 180px;
+    height: 65px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

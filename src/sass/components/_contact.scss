@@ -1,0 +1,34 @@
+.contact {
+  
+}
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.contact-input {
+  padding: 5px 20px;
+  height: 40px;
+  border: 2px solid $color-input;
+  width: 100%;
+  color: $color-input;
+  outline: none;
+}
+
+.contact-textarea {
+  padding: 5px 20px;
+  height: 150px;
+  border: 2px solid $color-input;
+  width: 100%;
+  color: $color-input;
+}
+
+.contact-item {
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  background-color: $color-input;
+  color: $color-white;
+  padding: 10px 30px;
+}
