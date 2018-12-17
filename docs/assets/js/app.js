@@ -64,7 +64,7 @@ console.warn("This script is development version.");
 /******/ 	__webpack_require__.p = "/assets/js/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2866,7 +2866,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 }));
 
 /***/ },
-/* 2 */
+/* 2 */,
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";

@@ -64,34 +64,25 @@ console.warn("This script is development version.");
 /******/ 	__webpack_require__.p = "/assets/js/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 6:
+/***/ 4:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-$('.cyclorama').cyclorama({
-  useKeyboard: true
-});
-
-$('.js-floor-link').on('click', function (e) {
-  var $this = $(this);
-  var $target = $($this.attr('href'));
-  e.preventDefault();
-
-  $('.js-floor-link').removeClass('is-active');
-  $this.addClass('is-active');
-
-  $('.js-floor').fadeOut();
-  $target.fadeIn();
+$('#js-section-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: $('#js-slider-prev'),
+  nextArrow: $('#js-slider-next')
 });
 
 /***/ }
 
 /******/ });
-//# sourceMappingURL=maps/view.map
+//# sourceMappingURL=maps/index.map

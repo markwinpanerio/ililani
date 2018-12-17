@@ -4,7 +4,9 @@
   "description": "フロントエンド開発の効率をあげるフルスタックテンプレート",
   "dependencies": {
     "jquery": "^3.3.1",
-    "scrollmagic": "^2.0.6"
+    "scrollmagic": "^2.0.6",
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {},
   "scripts": {
