@@ -1,4 +1,5 @@
 .hero {
+  $this: &;
   height: 100vh;
   position: relative;
   font-family: $font-poppins;
@@ -48,5 +49,14 @@
   &-description {
     font-size: 16px;
     color: $color-primary;
+  }
+
+  //modifier
+  &-contact {
+    height: 50vh;
+
+    #{$this}-image {
+      background-attachment: initial;
+    }
   }
 }

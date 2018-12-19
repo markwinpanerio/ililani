@@ -328,6 +328,10 @@ body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoo
 
 .hero-description { font-size: 16px; color: #033b52; }
 
+.hero-contact { height: 50vh; }
+
+.hero-contact .hero-image { background-attachment: initial; }
+
 .lifestyle { position: relative; }
 
 .lifestyle-map { height: 450px; position: relative; }
@@ -369,6 +373,8 @@ body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoo
 .is-active .section-title:before { transform: translateX(0); }
 
 .section-content { margin-top: 20px; padding-right: 20px; }
+
+.section-content-left { text-align: left; }
 
 .section-description { font-size: 16px; color: #033b52; }
 

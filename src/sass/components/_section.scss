@@ -61,6 +61,11 @@
   &-content {
     margin-top: 20px;
     padding-right: 20px;
+
+    //modifier
+    &-left {
+      text-align: left;
+    }
   }
 
   &-description {

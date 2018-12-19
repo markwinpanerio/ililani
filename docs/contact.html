@@ -65,76 +65,49 @@
     </div>
   </div>
 </header>
-    <main class="l-main">
-      <div class="hero-panorama">
-        <div class="hero-panorama-header">
-          <div class="l-container">
-            <ul>
-              <li><a href="#js-floor-8" class="is-active js-floor-link">8th Floor</a></li>
-              <li><a href="#js-floor-33" class="js-floor-link">33rd Floor</a></li>
-              <li><a href="#js-floor-43" class="js-floor-link">43rd Floor</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="hero-panorama-list">
-          <div class="hero-panorama-item js-floor" id="js-floor-8">
-            <div class="cyclorama">
-                <div class="pan-inner">
-                    <div class="pan-content">
-                        <!-- put 360° panorama image(s) here -->
-                        <img src="http://www.keauhouplace.com/assets/img/views/view_08_Fl.jpg">
+    <main class="l-main l-index">
+      <div class="hero hero-contact">
+        <div class="hero-image" style="background-image: url('./assets/images/bg/hero-bg.jpg')"></div>
+      </div>
+      <div class="l-main-inner">
+        <section class="l-section section section-center js-section">
+          <div class="l-container l-container-section">
+            <div class="l-section-inner">
+              <h2 class="section-title">
+                <span>Contact Us</span>
+              </h2>
+              <div class="section-content">
+                <div class="contact">
+                  <form action="/" class="contact-form">
+                    <div class="row">
+                      <div class="row-inner">
+                        <div class="contact-item col-lg-6">
+                          <input type="text" class="contact-input" placeholder="First Name">
+                        </div>
+                        <div class="contact-item col-lg-6">
+                          <input type="text" class="contact-input" placeholder="Last Name">
+                        </div>
+                        <div class="contact-item col-lg-6">
+                          <input type="email" class="contact-input" placeholder="Email">
+                        </div>
+                        <div class="contact-item col-lg-6">
+                          <input type="tel" class="contact-input" placeholder="Phone">
+                        </div>
+                        <div class="contact-item col-lg-12">
+                          <input type="text" class="contact-input" placeholder="Subject">
+                        </div>
+                        <div class="contact-item col-lg-12">
+                          <textarea  cols="30" rows="10" placeholder="Message" class="contact-textarea"></textarea>
+                        </div>
+                      </div>
+                      <button class="contact-button"> Submit </button>
                     </div>
+                  </form>
                 </div>
-                <button class="pan-left">
-                  <span></span>
-                </button>
-                <button class="pan-right">
-                  <span></span>
-                </button>
-                <div class="pan-percentage">
-                    <div class="pan-runner"></div>
-                </div>
+              </div>
             </div>
           </div>
-          <div class="hero-panorama-item js-floor" id="js-floor-33">
-            <div class="cyclorama">
-                <div class="pan-inner">
-                    <div class="pan-content">
-                        <!-- put 360° panorama image(s) here -->
-                        <img src="http://www.keauhouplace.com/assets/img/views/view_33_Fl.jpg">
-                    </div>
-                </div>
-                <button class="pan-left">
-                  <span></span>
-                </button>
-                <button class="pan-right">
-                  <span></span>
-                </button>
-                <div class="pan-percentage">
-                    <div class="pan-runner"></div>
-                </div>
-            </div>
-          </div>
-          <div class="hero-panorama-item js-floor" id="js-floor-43">
-            <div class="cyclorama">
-                <div class="pan-inner">
-                    <div class="pan-content">
-                        <!-- put 360° panorama image(s) here -->
-                        <img src="http://www.keauhouplace.com/assets/img/views/view_43_Fl.jpg">
-                    </div>
-                </div>
-                <button class="pan-left">
-                  <span></span>
-                </button>
-                <button class="pan-right">
-                  <span></span>
-                </button>
-                <div class="pan-percentage">
-                    <div class="pan-runner"></div>
-                </div>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
     </main>
     <footer class="l-footer fotoer">
@@ -215,7 +188,5 @@
 
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/app.js"></script>
-<script src="assets/lib/jquery.cyclorama.js"></script>
-<script src="assets/js/view.js"></script>
 </body>
 </html>
