@@ -100,6 +100,8 @@ body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoo
 
 .l-container-section { background-color: #fff; }
 
+.l-container-contact, .l-container-contact-thanks { width: calc(100% - 200px); margin: 0 auto; }
+
 .l-header { position: absolute; left: 0; right: 0; margin: 0 auto; z-index: 1; opacity: 0; transform: translateY(-30px); transition: opacity 0.5s ease-in-out, transform 1s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 .l-header.is-shown { opacity: 1; transform: translateX(0); }
@@ -220,6 +222,8 @@ body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoo
 
 .button-right { text-align: right; }
 
+.button-contact { margin-top: 80px; }
+
 .contact-form { margin-top: 30px; }
 
 .contact-input { padding: 5px 20px; height: 40px; border: 2px solid #0489a8; width: 100%; color: #0489a8; outline: none; }
@@ -228,7 +232,7 @@ body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoo
 
 .contact-item { margin-bottom: 20px; }
 
-.contact-button { background-color: #0489a8; color: #fff; padding: 10px 30px; }
+.contact-button { background-color: #0489a8; color: #fff; padding: 10px 30px; cursor: pointer; }
 
 .footer-title { font-size: 24px; color: #fff; font-family: "Poppins", sans-serif; }
 
@@ -359,6 +363,10 @@ body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoo
 .section { font-family: "Poppins", sans-serif; }
 
 .section-center { text-align: center; }
+
+.section-contact .section-description { font-size: 20px; }
+
+.section-contact .contact { margin-top: 50px; }
 
 .section-title { font-family: "Poppins", sans-serif; font-size: 42px; position: relative; display: inline-block; margin-bottom: 30px; color: #033b52; overflow: hidden; line-height: 2; }
 

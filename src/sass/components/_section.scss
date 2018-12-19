@@ -1,9 +1,20 @@
 .section {
+  $this: &;
   font-family: $font-poppins;
 
   //modifier
   &-center {
     text-align: center;
+  }
+
+  &-contact {
+    #{$this}-description {
+      font-size: 20px;
+    }
+
+    .contact {
+      margin-top: 50px;
+    }
   }
 
   &-title {

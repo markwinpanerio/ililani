@@ -33,6 +33,12 @@
   &-section {
     background-color: $color-white;
   }
+
+  &-contact,
+  &-contact-thanks {
+    width: calc(100% - 200px);
+    margin: 0 auto;
+  }
 }
 
 .l-header {
