@@ -64,25 +64,53 @@ console.warn("This script is development version.");
 /******/ 	__webpack_require__.p = "/assets/js/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 5:
+/***/ 4:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-$('#js-section-slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  prevArrow: $('#js-slider-prev'),
-  nextArrow: $('#js-slider-next')
+var $contactForm = $('#js-contact-form');
+var $inputText = $contactForm.find('.js-input-text');
+var $inputEmail = $contactForm.find('.js-input-email');
+var baseURL = window.location.origin;
+
+$contactForm.on('submit', function () {
+  var flag = false;
+  var thisInputText = void 0,
+      emailInputText = void 0;
+
+  for (var inputTextArray = 0; inputTextArray < $inputText.length; inputTextArray++) {
+    thisInputText = $inputText.eq(inputTextArray);
+
+    if (thisInputText.val() !== '') {
+      flag = true;
+      thisInputText.next('.contact-error').fadeOut();
+    } else {
+      thisInputText.next('.contact-error').fadeIn();
+      flag = false;
+    }
+  }
+
+  if (!flag) {
+    return flag;
+  } else {
+    return flag;
+    window.location.replace(baseURL + '/contact-thanks.html');
+  }
 });
+
+function checkEmailFormat(emailAddress) {
+  var pattern = new RegExp(/^(("[\w-+\s]+")|([\w-+]+(?:\.[\w-+]+)*)|("[\w-+\s]+")([\w-+]+(?:\.[\w-+]+)*))(@((?:[\w-+]+\.)*\w[\w-+]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][\d]\.|1[\d]{2}\.|[\d]{1,2}\.))((25[0-5]|2[0-4][\d]|1[\d]{2}|[\d]{1,2})\.){2}(25[0-5]|2[0-4][\d]|1[\d]{2}|[\d]{1,2})\]?$)/i);
+  return pattern.test(emailAddress);
+}
 
 /***/ }
 
 /******/ });
-//# sourceMappingURL=maps/index.map
+//# sourceMappingURL=maps/contact.map

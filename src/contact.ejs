@@ -33,26 +33,33 @@
                     React out to us and we’ss respond as soon as we can.
                   </p>
                   <div class="contact">
-                    <form action="/" class="contact-form">
+                    <form action="/" class="contact-form" id="js-contact-form">
                       <div class="row">
                         <div class="row-inner">
                           <div class="contact-item col-lg-6">
-                            <input type="text" class="contact-input" placeholder="First Name">
+                            <input type="text" class="contact-input js-input-text" placeholder="First Name *">
+                            <span class="contact-error js-input-empty">This field is required.</span>
                           </div>
                           <div class="contact-item col-lg-6">
-                            <input type="text" class="contact-input" placeholder="Last Name">
+                            <input type="text" class="contact-input js-input-text" placeholder="Last Name *">
+                            <span class="contact-error js-input-empty">This field is required.</span>
                           </div>
                           <div class="contact-item col-lg-6">
-                            <input type="email" class="contact-input" placeholder="Email">
+                            <input type="email" class="contact-input js-input-text" placeholder="Email *">
+                            <span class="contact-error js-input-empty">This field is required.</span>
+                            <span class="contact-error js-email-format">Email is in wrong format.</span>
                           </div>
                           <div class="contact-item col-lg-6">
-                            <input type="tel" class="contact-input" placeholder="Phone">
+                            <input type="tel" class="contact-input js-input-phone" placeholder="Phone">
+                            <span class="contact-error js-input-empty">This field is required.</span>
                           </div>
                           <div class="contact-item col-lg-12">
-                            <input type="text" class="contact-input" placeholder="Subject">
+                            <input type="text" class="contact-input js-input-text" placeholder="Subject">
+                            <span class="contact-error js-input-empty">This field is required.</span>
                           </div>
                           <div class="contact-item col-lg-12">
-                            <textarea  cols="30" rows="10" placeholder="Message" class="contact-textarea"></textarea>
+                            <textarea  cols="30" rows="10" placeholder="Message" class="contact-textarea js-input-text"></textarea>
+                            <span class="contact-error js-input-empty">This field is required.</span>
                           </div>
                         </div>
                         <button class="contact-button"> Submit </button>
@@ -71,5 +78,6 @@
 
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="assets/js/contact.js"></script>
 </body>
 </html>

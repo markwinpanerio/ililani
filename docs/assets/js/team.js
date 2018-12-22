@@ -64,25 +64,42 @@ console.warn("This script is development version.");
 /******/ 	__webpack_require__.p = "/assets/js/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 5:
+/***/ 6:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-$('#js-section-slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  prevArrow: $('#js-slider-prev'),
-  nextArrow: $('#js-slider-next')
+var $teamLink = $('.js-team-link');
+var $teamContent = $('.js-team-content');
+
+$(window).on('load', function () {
+
+  if (!$teamLink.hasClass('is-active')) {
+    $teamContent.eq(0).fadeIn();
+    $teamLink.eq(0).addClass('is-active');
+  }
+});
+
+var hrefValue = void 0;
+$teamLink.on('click', function (e) {
+  e.preventDefault();
+  var $this = $(this);
+  hrefValue = $this.attr('href');
+
+  $teamContent.fadeOut();
+  $(hrefValue).fadeIn();
+
+  $teamLink.removeClass('is-active');
+  $this.addClass('is-active');
 });
 
 /***/ }
 
 /******/ });
-//# sourceMappingURL=maps/index.map
+//# sourceMappingURL=maps/team.map
